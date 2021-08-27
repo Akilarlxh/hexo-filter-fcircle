@@ -12,8 +12,8 @@ hexo.extend.generator.register('fcircle', function (locals) {
   const data = {
     theme: config.theme,
     apiurl: urlFor(config.apiurl), //api地址
-    maxnumber: config.maxnumber ? config.maxnumber : 20, //页面展示文章数量
-    addnumber: config.addnumber ? config.addnumber : 10, //每次加载增加的篇数
+    initnumber: config.initnumber ? config.initnumber : 20, //页面展示文章数量
+    stepnumber: config.stepnumber ? config.stepnumber : 10, //每次加载增加的篇数
     fcircleCss: config.css ? urlFor(config.css) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/default.min.css",
     fcircleJs: config.js ? urlFor(config.js) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js",
     fecthJs: config.fetchJs ? urlFor(config.fetchJs) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fetch.min.js"
