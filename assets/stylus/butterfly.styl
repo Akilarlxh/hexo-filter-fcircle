@@ -1,0 +1,319 @@
+@font-face
+  font-family 'SAOUI'
+  src url('https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/SAOUI.ttf')
+  font-display swap
+//基本信息面板
+#fMessageBoard
+  font-size: 20px
+  background rgba(249, 249, 249, 0.8)
+  color rgba(60, 60, 61,0.7)
+  border-radius 5px
+  font-weight bolder
+  box-shadow 2px 2px 10px #888888
+  font-family 'SAOUI'!important
+  width 90%
+  max-width: 810px
+  margin: auto
+  height 260px
+  overflow: hidden
+  .fUpdatedTime
+    // padding-top: 10px!important
+    text-align: center
+    height: 40px
+  .fMessageItem
+    background rgba(207, 207, 207, 0.8)
+    box-shadow 0px 0px 15px rgb(188, 188, 188) inset
+    .fItem
+      height: 60px
+      background transparent
+      display: flex
+      .fLabel
+        padding: 0 3%
+        align-self: center
+        text-align: center
+        width: 25%
+        overflow hidden
+      .fMeasureBar
+        align-self: center
+        text-align: center
+        height: 20px
+        width: 50%
+        display: block;
+        background: rgba(117, 117, 117, 0.6)
+        border-radius: 5px;
+        overflow: hidden;
+        display: block;
+        box-shadow: 2px 2px 5px rgba(21, 21, 21, 0.6)
+        .fMeasure
+          display: block;
+          height: 20px
+          text-align: center
+          font-size: 12px
+      .fMessage
+        align-self: center
+        text-align: center
+        padding: 0 3%
+        width: 25%
+  // 切换排序按钮
+  #switchRankBtn
+    width: auto
+    max-width: 250px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    #rankByCreated
+      font-size: 20px;
+      height: 30px;
+      width: 80px;
+      display: inline-block;
+      padding: 2px 5px;
+    #rankByUpdated
+      font-size: 20px;
+      height: 30px;
+      width: 80px;
+      display: inline-block;
+      padding: 2px 5px;
+
+    input#switchRankMode[type=checkbox]
+      display: none
+
+    label#switchRank
+      cursor: pointer;
+      text-indent: -9999px;
+      width: 40px;
+      height: 20px;
+      margin: 15px 0px;
+      background: #3a8ec4;
+      display: inline-block;
+      border-radius: 10px;
+      position: relative;
+      &:after
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border-radius: 8px;
+        transition: 0.3s;
+      &:active
+        &:after
+          width 50px
+
+    input#switchRankMode
+      &:checked
+        & + label
+          background #d8653e
+          &:after
+            left calc(100% - 2px)
+            transform translateX(-100%)
+// 加载更多按钮
+#fcircleMoreBtn
+  width 90%
+  max-width: 810px
+  height 30px
+  margin: auto
+  background rgba(249, 249, 249, 0.8)
+  color rgba(60, 60, 61,0.7)
+  box-shadow 2px 2px 10px #888888
+  border-radius 5px
+  font-weight bolder
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+// 文章面板
+#fcircleContainer
+  font-family 'SAOUI'!important
+  width 100%
+  max-width: 900px
+  height auto
+  margin: auto
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none!important
+  .fArticleItem
+    margin 20px 5%
+    height: 150px
+    display: flex
+    background rgba(249, 249, 249, 0.8)
+    color rgba(60, 60, 61,0.7)
+    border-radius 5px
+    font-weight bolder
+    box-shadow 2px 2px 10px #888888
+    overflow: hidden
+    .fArticleAvatar
+      width: 30%
+      display: flex
+      flex-direction: column
+      .fAvatar
+        align-self: center
+        text-align: center
+        img
+          width 75px
+          height 75px
+          margin: 15px 5px!important
+          border-radius 25px
+        .img-alt.is-center
+          display: none
+      .fArticleAuthor
+        width: 80%;
+        margin: 3px 0px;
+        align-self: center;
+        text-align: center;
+        transform: skewX(-10deg);
+        height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    .fArticleMessage
+      display: flex
+      flex-direction: column
+      width: 70%
+      a.fArticleTitle
+        align-self: center;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        width: 80%;
+        padding: 0 10%
+        color rgba(60, 60, 61,0.7)
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover
+          &:before
+            position: fixed
+            width:fit-content
+            max-width: 80%
+            margin:auto
+            left:0;
+            right:0
+            top:10%
+            border-radius: 10px
+            text-align: center
+            z-index: 100
+            content: attr(data-title)
+            font-size: 20px
+            color: #fff
+            padding: 10px
+            background-color: rgba(60, 60, 61,0.7)
+            white-space: break-spaces
+
+
+      .fArticleTime
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        display: flex
+        .fArticleCreated
+          width: 40%;
+          margin: 5% 0% 5% 10%;
+          text-align: center;
+          align-self: center;
+          padding: 15px 0;
+
+        .fArticleUpdated
+          width: 40%;
+          margin: 5% 10% 5% 0%;
+          text-align: center;
+          align-self: center;
+          padding: 15px 0;
+        i
+          &:before
+            margin-right: 5px
+@media screen and (max-width: 768px)
+  #fMessageBoard
+    font-size: 16px
+@media screen and (max-width: 400px)
+  #fcircleContainer
+    .fArticleItem
+      .fArticleMessage
+        .fArticleTime
+          i
+            display: none
+  #fMessageBoard
+    font-size: 12px
+    #switchRankBtn
+      #rankByCreated
+        font-size: 12px;
+      #rankByUpdated
+        font-size: 12px;
+  #fcircleContainer
+    .fArticleItem
+      .fArticleAvatar
+        display: none
+      .fArticleMessage
+        width: 100%
+        a.fArticleTitle
+          &:hover
+            &:before
+              font-size: 16px
+@media screen and (max-width: 300px)
+  #fMessageBoard
+    .fUpdatedTime span.fLabel
+      display: none
+    .fMessageItem
+      .fItem
+        .fLabel
+          width: 50%
+        meter.fMeasureBar
+          display: none
+        .fMessage
+          width: 50%
+    span#rankByCreated
+      display: none!important
+    span#rankByUpdated
+      display: none!important
+
+[data-theme="dark"]
+  #fMessageBoard
+    background rgba(21, 21, 21,0.7)
+    color rgba(249, 249, 249, 0.8)
+    box-shadow 0px 0px 5px rgba(102, 218, 215,0.5)
+    .fMessageItem
+      background rgba(21, 21, 21,0.7)
+      box-shadow 0px 0px 5px rgba(222, 221, 174, 0.5) inset
+    // 切换排序按钮
+    #switchRankBtn
+      input#switchRankMode[type=checkbox]
+        display: none
+
+      label#switchRank
+        background: #3a8ec4;
+        &:after
+          background: rgba(21, 21, 21,0.7);
+
+      input#switchRankMode
+        &:checked
+          & + label
+            background #d8653e
+  // 加载更多按钮
+  #fcircleMoreBtn
+    background rgba(21, 21, 21,0.7)
+    color rgba(249, 249, 249, 0.8)
+    box-shadow 2px 2px 5px rgba(102, 218, 215,0.5)
+    &:hover
+      box-shadow 0px 0px 2px rgba(102, 218, 215,0.5)
+  // 文章面板
+  #fcircleContainer
+    .fArticleItem
+      background rgba(21, 21, 21,0.7)
+      color rgba(249, 249, 249, 0.8)
+      box-shadow 2px 2px 5px rgba(102, 218, 215,0.5)
+      &:hover
+        box-shadow 0px 0px 2px rgba(102, 218, 215,0.5)
+      .fArticleMessage
+        a.fArticleTitle
+          color rgba(249, 249, 249, 0.8)
+          &:hover
+            &:before
+              color: rgba(60, 60, 61,0.7)
+              background-color: rgba(249, 249, 249, 0.8)
