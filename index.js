@@ -16,7 +16,7 @@ hexo.extend.generator.register('fcircle', function (locals) {
     stepnumber: config.stepnumber ? config.stepnumber : 10, //每次加载增加的篇数
     fcircleCss: config.css ? urlFor(config.css) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/default.min.css",
     fcircleJs: config.js ? urlFor(config.js) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js",
-    fecthJs: config.fetchJs ? urlFor(config.fetchJs) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fetch.min.js"
+    fetchJs: config.fetchJs ? urlFor(config.fetchJs) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fetch.min.js"
   }
   //渲染页面
   const content = pug.renderFile(path.join(__dirname, './assets/html.pug'), data)
