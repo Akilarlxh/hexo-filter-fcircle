@@ -41,14 +41,29 @@
   |front_matter|object|【可选】写法见上文示例，fcircle页面的 front_matter 配置|
 
 # 截图
-1. 默认样式-author：[Akilar](https://akilar.top/fcircle/)
-  ```yaml
-  # css
-  https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/default.min.css
-  # js
-  https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js
-  ```
-  ![](https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/preview/butterfly.png)
+1. 默认样式-Author：[Akilar](https://akilar.top/fcircle/)
+  - 所用主题：无
+  - 样式CDN链接：
+    ```yaml
+    # css
+    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/default.min.css
+    # js
+    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js
+    ```
+  - 预览效果截图：
+    ![](https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/preview/default.png)
+
+2. 默认样式-Author：[Akilar](https://akilar.top/fcircle/)
+  - 所用主题：[hexo-theme-butterfly](https://butterfly.js.org)
+  - 样式CDN链接：
+    ```yaml
+    # css
+    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/butterfly.min.css
+    # js
+    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js
+    ```
+  - 预览效果截图：
+    ![](https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/preview/butterfly.png)
 
 # 欢迎投稿
   https://github.com/Akilarlxh/hexo-filter-fcircle/issues
