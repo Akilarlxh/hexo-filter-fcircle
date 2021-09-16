@@ -14,6 +14,7 @@ hexo.extend.generator.register('fcircle', function (locals) {
     apiurl: urlFor(config.apiurl), //api地址
     initnumber: config.initnumber ? config.initnumber : 20, //页面展示文章数量
     stepnumber: config.stepnumber ? config.stepnumber : 10, //每次加载增加的篇数
+    error_img: config.error_img ? urlFor(config.error_img) : "https://cdn.jsdelivr.net/npm/akilar-candyassets/image/404.gif",
     fcircleCss: config.css ? urlFor(config.css) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/default.min.css",
     fcircleJs: config.js ? urlFor(config.js) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js",
     fetchJs: config.fetchJs ? urlFor(config.fetchJs) : "https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fetch.min.js"
@@ -26,7 +27,8 @@ hexo.extend.generator.register('fcircle', function (locals) {
     var fdata = {
       apiurl: '${data.apiurl}',
       initnumber: ${data.initnumber}, //【可选】页面初始化展示文章数量
-      stepnumber: ${data.stepnumber} //【可选】每次加载增加的篇数
+      stepnumber: ${data.stepnumber}, //【可选】每次加载增加的篇数
+      error_img: '${data.error_img}' //【可选，头像图片加载失败时的默认头像】
     }
     //存入本地存储
     localStorage.setItem("fdatalist",JSON.stringify(fdata))

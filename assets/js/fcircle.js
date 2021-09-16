@@ -55,6 +55,7 @@ if(container){
 // ======================================================
 // 打印友链内容
 function loadArticleItem(datalist,start,end){
+var fdatalist = JSON.parse(localStorage.getItem("fdatalist"));
 // 声明友链页面的挂载容器
 var container = document.getElementById('fcircleContainer');
 // 循环读取输出友链信息
@@ -64,7 +65,7 @@ var articleItem=`
   <div class="fArticleItem">
     <div class="fArticleAvatar">
       <a class="fArticlelink fAvatar" target="_blank" rel="noopener nofollow" href="${item.link}">
-        <img src="${item.avatar}" alt="avatar">
+        <img src="${item.avatar}" alt="avatar"  onerror="this.src='${fdatalist.error_img}'; this.onerror = null;">
       </a>
       <div class="fArticleAuthor">
         ${item.author}

@@ -30,6 +30,7 @@
       apiurl: https://hexo-friendcircle-api.vercel.app/api #api地址
       initnumber: 20, #【可选】页面初始化展示文章数量
       stepnumber: 10 #【可选】每次加载增加的篇数
+      error_img: /img/404.png #【可选】头像图片加载失败时的默认头像
       css: #【可选】开发者接口，自定义css链接
       js: #【可选】开发者接口，自定义js链接
       path: #【可选】fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html
@@ -45,6 +46,7 @@
   |apiurl|URL|api链接，配置教程参看[友链朋友圈 3.0 食用说明书](https://noionion.top/47095.html)|
   |initnumber|number|【可选】填写阿拉伯数字，页面展示文章数量，默认20|
   |stepnumber|number|【可选】填写阿拉伯数字，每次加载增加的篇数，默认10|
+  |error_img|URL|【可选】头像图片加载失败时的默认头像|
   |css| URL|【可选】开发者接口，自定义css链接|
   |js| URL|【可选】开发者接口，自定义js链接|
   |path| string|【可选】字符串，fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html|
