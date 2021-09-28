@@ -28,7 +28,7 @@
     fcircle:
       enable: true #控制开关
       apiurl: https://hexo-friendcircle-api.vercel.app/api #api地址
-      initnumber: 20, #【可选】页面初始化展示文章数量
+      initnumber: 20 #【可选】页面初始化展示文章数量
       stepnumber: 10 #【可选】每次加载增加的篇数
       error_img: /img/404.png #【可选】头像图片加载失败时的默认头像
       css: #【可选】开发者接口，自定义css链接
