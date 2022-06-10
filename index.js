@@ -14,10 +14,10 @@ hexo.extend.generator.register('fcircle', function (locals) {
     apiurl: urlFor(config.apiurl), //api地址
     initnumber: config.initnumber ? config.initnumber : 20, //页面展示文章数量
     stepnumber: config.stepnumber ? config.stepnumber : 10, //每次加载增加的篇数
-    error_img: config.error_img ? urlFor(config.error_img) : "https://unpkg.zhimg.com/akilar-candyassets/image/404.gif",
-    fcircleCss: config.css ? urlFor(config.css) : "https://unpkg.zhimg.com/hexo-filter-fcircle/assets/css/default.min.css",
-    fcircleJs: config.js ? urlFor(config.js) : "https://unpkg.zhimg.com/hexo-filter-fcircle/assets/js/fcircle.min.js",
-    fetchJs: config.fetchJs ? urlFor(config.fetchJs) : "https://unpkg.zhimg.com/hexo-filter-fcircle/assets/js/fetch.min.js"
+    error_img: config.error_img ? urlFor(config.error_img) : "https://npm.elemecdn.com/akilar-candyassets/image/404.gif",
+    fcircleCss: config.css ? urlFor(config.css) : "https://npm.elemecdn.com/hexo-filter-fcircle/assets/css/default.min.css",
+    fcircleJs: config.js ? urlFor(config.js) : "https://npm.elemecdn.com/hexo-filter-fcircle/assets/js/fcircle.min.js",
+    fetchJs: config.fetchJs ? urlFor(config.fetchJs) : "https://npm.elemecdn.com/hexo-filter-fcircle/assets/js/fetch.min.js"
   }
   //渲染页面
   const content = pug.renderFile(path.join(__dirname, './assets/html.pug'), data)
