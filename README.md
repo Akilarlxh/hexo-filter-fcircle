@@ -31,8 +31,9 @@
       initnumber: 20 #【可选】页面初始化展示文章数量
       stepnumber: 10 #【可选】每次加载增加的篇数
       error_img: /img/404.png #【可选】头像图片加载失败时的默认头像
-      css: #【可选】开发者接口，自定义css链接
-      js: #【可选】开发者接口，自定义js链接
+      css: https://npm.elemecdn.com/hexo-filter-fcircle/assets/css/butterfly.css #【可选】开发者接口，自定义css链接
+      js: https://npm.elemecdn.com/hexo-filter-fcircle/assets/js/fcircle.js #【可选】开发者接口，自定义js链接
+      fetchJS: https://npm.elemecdn.com/hexo-filter-fcircle/assets/js/fetch.js #可选】开发者接口，自定义fetchJs链接
       path: #【可选】fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html
       front_matter: #【可选】fcircle页面的 front_matter 配置
         title: 朋友圈
@@ -49,6 +50,7 @@
   |error_img|URL|【可选】头像图片加载失败时的默认头像|
   |css| URL|【可选】开发者接口，自定义css链接|
   |js| URL|【可选】开发者接口，自定义js链接|
+  |fetchJs|URL|可选】开发者接口，自定义fetchJs链接|
   |path| string|【可选】字符串，fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html|
   |front_matter|object|【可选】写法见上文示例，fcircle页面的 front_matter 配置|
 
@@ -59,12 +61,12 @@
   - 样式CDN链接：
     ```yaml
     # css
-    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/default.min.css
+    https://unpkg.zhimg.com/hexo-filter-fcircle/assets/css/default.min.css
     # js
-    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js
+    https://unpkg.zhimg.com/hexo-filter-fcircle/assets/js/fcircle.min.js
     ```
   - 预览效果截图：
-    ![](https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/preview/default.png)
+    ![](https://unpkg.zhimg.com/hexo-filter-fcircle/assets/preview/default.png)
 
 2. SAO-UI-适配butterfly主题样式
   - Author：[Akilar](https://akilar.top/fcircle/)
@@ -72,12 +74,12 @@
   - 样式CDN链接：
     ```yaml
     # css
-    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/css/butterfly.min.css
+    https://unpkg.zhimg.com/hexo-filter-fcircle/assets/css/butterfly.min.css
     # js
-    https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/js/fcircle.min.js
+    https://unpkg.zhimg.com/hexo-filter-fcircle/assets/js/fcircle.min.js
     ```
   - 预览效果截图：
-    ![](https://cdn.jsdelivr.net/npm/hexo-filter-fcircle/assets/preview/butterfly.png)
+    ![](https://unpkg.zhimg.com/hexo-filter-fcircle/assets/preview/butterfly.png)
 
 # 欢迎投稿
   https://github.com/Akilarlxh/hexo-filter-fcircle/issues

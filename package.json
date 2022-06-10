@@ -1,6 +1,6 @@
 {
   "name": "hexo-filter-fcircle",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A friend link subscribe plugin for hexo,you can also apply it in any project which is based on html",
   "main": "index.js",
   "scripts": {
